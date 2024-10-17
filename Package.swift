@@ -18,6 +18,11 @@ let package = Package(
             type: .dynamic,
             targets: ["ReusableToolingLib"]
         ),
+        .library(
+            name: "ReusableToolingLib_Static",
+            type: .static,
+            targets: ["ReusableToolingLib"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.9.1"),
